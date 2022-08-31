@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            font-size:30px;
+            color:red;
+            font-style: italic;
+        }
+
+        /* if window width decreases less than 450 then blow style will run*/
+        @media all and(max-width:800px){   
+            p{
+                color:blue;
+                background-color: aqua;
+                font-style: normal;
+            }
+        }
+        /*Media query should always be in the last of the page(bottom)*/
+        @media (min-width:300px) and (max-width:800px){   
+            p{
+                color:blue;
+                background-color: aqua;
+                font-style: normal;
+            }
+        }
+        @media print{
+            p{
+                color:green;
+            }
+        }
+        @media(orientation: landscape){
+            p{
+                color:green;
+            }
+        }
+        /* ,(coma) or condtion
+        and both should be true
+         max-width: from 0 to max-width value.
+         min-width:above min-width.
+         orientation:landscape,portarait.
+         all - both screen and print.
+         print: only print.
+         screen: screen only screen.
+          */
+    </style>
+</head>
+<body>
+    <p> This is some random text on the screen</p>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #card{
+            width:100px;
+            height:100px;
+            background-color: blue;
+            animation-name:moveToLeft;
+            animation-duration:1s;
+            animation-delay: 1s;
+            animation-direction: normal;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes moveToLeft{
+        0%{
+             margin-left:0px;
+             background-color: yellow;
+        }
+        25%{
+            margin-left:250px;
+            background-color: green;
+        }
+        50%{
+            margin-left:150px;
+            background-color: red;
+        }
+        75%{
+            margin-left:175px;
+            background-color: pink;
+        }
+        100%{
+            margin-left:200px;
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="card">
+    </div>
+</body>
+</html>
